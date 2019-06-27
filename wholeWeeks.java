@@ -3,8 +3,11 @@ import java.util.*;
 class Solution{
 
     public int solution(int Y,String A,String B,String W) throws Exception{
+	//getting the starting day for the A month
         int day=getStartMonthDay(Y,A,W);
+	//calculating total days between months
         int totalDays=calculateDays(Y,A,B);
+	//returning number of weeks john can stay
         return (totalDays+day-8)/7;
     }
 
